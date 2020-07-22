@@ -15,7 +15,7 @@ $ roslaunch simple_robot_description rviz_simple.launch
 #### Run a gazebo, and you will see that something is wrong
 
 ```
-$ roslaunch ahand_gazebo simple_ahand.launch
+$ roslaunch simple_robot_gazebo simple_robot_gazebo.launch 
 
 ```
 
