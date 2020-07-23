@@ -10,12 +10,32 @@
     <include>
       <uri>model://sun</uri>
     </include>
+    <physics type="ode">
+      <max_step_size>0.0001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>10000</real_time_update_rate>
+      <ode>
+        <solver>
+          <type>quick</type>
+          <iters>50</iters>
+          <sor>1.4</sor>
+        </solver>
+        <constraints>
+          <cfm>0</cfm>
+          <erp>1</erp>
+          <contact_max_correcting_vel>0</contact_max_correcting_vel>
+          <contact_surface_layer>0</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>
+
 
     <!-- Focus camera on tall pendulum -->
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>4.927360 -4.376610 3.740080 0.000000 0.275643 2.356190</pose>
+        <pose>0.218418 -0.007009 0.120453 -0 0.339643 3.10419</pose>
         <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
       </camera>
     </gui>
 
